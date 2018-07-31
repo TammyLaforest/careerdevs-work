@@ -1,0 +1,5 @@
+#!/bin/bash
+clear
+echo "Welcome to AccountSOFT!"
+read -p "Press [ENTER] to continue"
+cat payroll.txt
