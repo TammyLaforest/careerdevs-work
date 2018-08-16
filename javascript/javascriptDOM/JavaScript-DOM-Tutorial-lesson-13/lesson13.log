@@ -1,0 +1,36 @@
+Navigated to file:///Users/lrei/Desktop/javascript%20dom/JavaScript-DOM-Tutorial-lesson-13/index.html?
+var li = document.querySelector('li:last-child')
+undefined
+li
+<li>​<span class=​"name">​The Master and the Margarita​</span>​<span class=​"delete">​delete​</span>​</li>​
+li.style.color = "red"
+"red"
+Navigated to file:///Users/lrei/Desktop/javascript%20dom/JavaScript-DOM-Tutorial-lesson-13/index.html?
+li.style.color = "red"
+VM122:1 Uncaught ReferenceError: li is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM122:1
+var li = document.querySelector('li:last-child')
+undefined
+li.style.color = "red"
+"red"
+li.style.marginTop ="60px"
+"60px"
+li.className
+""
+li.className = "test"
+"test"
+li.class
+undefined
+li.className
+"test"
+li.className = "test 2"
+"test 2"
+li.classNamew
+undefined
+li.className
+"test 2"
+li.className += "test 3"
+"test 2test 3"
+li.className += "test 4"
+"test 2test 3test 4"
