@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <!--<link href="script.js" rel="script">-->
+
+
+
+  <script>
+var myName = 'Gordon';
+undefined
+function sayName() {
+console.log(myName);}
+undefined
+sayName();
+VM201:2 Gordon
+undefined
+var myName = 'Gordon';
+undefined
+function sayName() {
+var secret - 'watchandcode';
+console.log(myName);}
+VM215:2 Uncaught SyntaxError: Unexpected token -
+function sayName() {
+var secret - 'watchandcode';
+console.log(secret);}
+VM219:2 Uncaught SyntaxError: Unexpected token -;;;;
+
+
+
+~~~~~~~~~~~~~~~~~~~~~
+//runWithDebugger interlude
+
+function logTenNumbers() {
+    for (var i = 0; 1 < 10; i++) {
+        console.log(i);
+    }
+}
+    }
+}
+
+function runWithDebugger(ourFunction)
+{
+    debugger;
+    ourFunction();
+}
+
+
+
+
+runWithDebugger(function logTenNumbers(){
+    for (var i = 0; i < 10; i++) {
+        console.log(i);
+    }
+});
+
+~~~~~~~~~~~~~~~~~~~~~~
+
+//setTimeout interlude
+
+setTimeout(function() {
+    console.log('Wake up, Gordon!');
+}, 5000)
+
+~~~~~~~~~~~~~~~~~~~~~~
+
+//forEach interlude
+
+var students = ['Tim', 'Tom', 'Ted'];
+
+function logName(name) {
+    for (var i=0; i <students.length; i++)
+    console.log(name);
+}
+
+var students = ['Tim', 'Tom', 'Ted'];
+
+function logName(name) {
+    for (var i=0; i <students.length; i++)
+    console.log(name);
+}
+
+students.forEach(logName);
+
+students.forEach(fnction logName(name) {
+    console.log(name);});
+    
+    students.forEach(function(name){
+        console.log(name);
+    });
+    
+    
+    })
+    
+    
+})
+
+function forEach(myArray, myFunction) {
+    for (var i=0; i < myArray.length; i++) {
+    myFunction(myArry[i]);
+    }
+}
+
+forEach(students, function(student) {
+    console.log(student);
+}
+
+forEach(students, function(student, logName) {
+}
+
+~~~~~~~~~~~~~~~~~~~~
+
+TutorialsElement.addEventListener('click',funtion(event){
+    console.log(event);
+    console.log('The tutorials element was clicked');
+    
+});
+
+~~~~~~~~~~~~~~~~~~~~
+
+
+
+</script>  
+</head>
+<body>
+</body>
+</html>

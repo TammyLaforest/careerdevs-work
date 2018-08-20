@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <!--<link href="script.js" rel="script">-->
 </head>
 
 <body>
@@ -36,9 +37,12 @@
     <ul>
     </ul>
 
-    <script src="script.js">
+
+
+
+        <script>
         var todoList = {
-            todos: [],
+            todos:[],
             addTodo: function(todoText) {
                 this.todos.push({
                     todoText: todoText,
@@ -64,7 +68,7 @@
                         completedTodos++;
                     }
                 }
-//i already defined?
+
                 if (completedTodos === totalTodos) {
                     for (var i = 0; i < totalTodos; i++) {
                         this.todos[i].completed = false;
@@ -77,7 +81,6 @@
                 }
             }
         };
-//handlers not in the code correctly?
         var handlers = {
             addTodo: function() {
                 var addTodoTextInput = document.getElementById("addTodoTextInput");
@@ -135,5 +138,3 @@
 </body>
 
 </html>
- 
- <!--need to go back and redo this to learn it better.
