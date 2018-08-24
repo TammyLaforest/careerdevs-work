@@ -1,22 +1,23 @@
 /*global $*/
 
-// var tweet = "<div style='margin:20px 0; padding: 10px; background: #eee'>The big fight live: Ham vs Cheese!</div>";
-var tweet = "The big fight live: Ham vs Cheese!";
 
-// $("#tweets div").append(tweet)
+// $("section").wrap("<div>");
+// $("section").unwrap("");
+// $("section").wrapAll("<div>");
 
-// $("#tweets div").prepend(tweet)
+var wrapper ="<div class='wrapper'>";
+var button = $(".button");
+var wrapped = true;
 
-
-// $("#tweets div p").before(tweet)
-
-// $("#tweets div p").after(tweet)
-
-// $("#tweets div p").html(tweet)
-
-
-// $("#tweets div ").html(tweet) //replaces the html
-
-
-$("#tweets div p").text(tweet) //want text of p tag to be tweet
-
+button[0].onclick = function(){
+    if(wrapped){
+        $("section").unwrap();
+        wrapped = false;
+        button.text("Wrap")
+        
+    } else {
+        $("section").wrapAll(wrapper);
+        wrapped = true;
+        button.text("Unwrap")
+    }
+};
