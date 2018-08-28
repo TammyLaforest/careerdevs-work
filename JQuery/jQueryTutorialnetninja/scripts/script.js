@@ -1,4 +1,21 @@
 /*global $*/
+ $(document).ready(function(){
+     
+ });
+// same as
+ $(function(){
+     
+ });
+ 
+  $(window).on("load", function(){
+     
+ });
+ //same as
+  $(window).load(function(){
+     
+ });
+
+
 
 // console.log($("#social-nav").css("top", "-200px"));
 
@@ -31,7 +48,7 @@
 //     myLis.off("click");
 // });
 
-$("#lead-banner").on("dblclick",function(){
-    alert("you double clicked me");
+// $("#lead-banner").on("dblclick",function(){
+//     alert("you double clicked me");
     
-});
+// });
