@@ -24,9 +24,14 @@
     
 // };
 
-var myLis = $("#points-of-sale li");
+// var myLis = $("#points-of-sale li");
 
-myLis.on("click", function(){
-    $(this).css({"background" : "pink"});
-    myLis.off("click");
+// myLis.on("click", function(){
+//     $(this).css({"background" : "pink"});
+//     myLis.off("click");
+// });
+
+$("#lead-banner").on("dblclick",function(){
+    alert("you double clicked me");
+    
 });
