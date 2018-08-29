@@ -1,21 +1,17 @@
 /*global $*/
  $(document).ready(function(){
+    function complete() {
+     alert ("Don't use alerts like this. It's amature.")
+    } 
+     $("section > h2").on("click", function(){
+      $(this).animate({"width": "500px", "height" : "100px"}, 1000, "linear", complete);
      
-     
-     
-     
-     
-   
-
-$("*").on("click", function(e){
-    console.log(e.target);
-    console.log("The event type is: " = e.type);
-console.log("x co-ordinate of the event is: " +e.pageX)
-console.log("Y co-ordinate of the event is: " +e.pageY)
-e.stopePropagation();
-});
+          
+ });
      
      
  });
+     
+     
 
 
