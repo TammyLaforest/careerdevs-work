@@ -372,7 +372,13 @@ section#points-of-sale ul{
 
 }
 
+blockquote {
+    display: none;
+}
 
+blockquote:first-of-type{
+    display: block;
+}
 
 
 

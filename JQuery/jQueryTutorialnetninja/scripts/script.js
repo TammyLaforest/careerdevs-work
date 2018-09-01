@@ -1,22 +1,25 @@
 /*global $*/
  $(document).ready(function(){
 
-
-          $(".slide-button-up").on("click", function(){
-           
-      
-          $("#lead-banner").slideToggle(500);
-          });
-          
-          //      $("#lead-banner").slideUp(100);
-          // });
-          // $(".slide-button-down").on("click", function(){
-           
-          //  $("#lead-banner").slideDown(100, function (){alert('done')}
-          //  );
-           
-          // });
-          
+  var allQuotes = $("blockquote");
+  var currentQuote = 0;
+  
+  function changeQuote(){
+   
+   $(allQuotes[currentQuote]).fadeOut(200, function(){
+     
+     if(currentQuote == allQuotes.length-1) {
+     currentQuote = 0;
+    } else {
+     currentQuote++;
+    }
+    
+    $(allQuotes[currentQuote]).fadeIn(200);
+  });
+   }
+   
+ var quoteTimer = setInterval(changeQuote, 3000);
+  
  });
      
      
