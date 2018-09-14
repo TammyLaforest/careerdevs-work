@@ -1,8 +1,9 @@
+var events = require('events'); 
 
-//first file
-var stuff = require('./stuff'); 
+var myEmitter = new events.EventEmitter();
 
+myEmitter.on('someEvent', function(mssg){
+    console.log(mssg);
+});
 
-console.log(stuff.counter (['shaun', 'crystal', 'ryu']));
-console.log(stuff.adder (5,6));
-console.log(stuff.adder (stuff.pi, 5));
+myEmitter.emit('someEvent', 'the event was emitted');
