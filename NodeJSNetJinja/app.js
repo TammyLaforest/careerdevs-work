@@ -1,10 +1,14 @@
 var fs = require ('fs');
 
-// var readme = fs.readFileSync('readme.txt', 'utf8');
-// fs.writeFileSync('writeme.txt', readme);
+// fs.mkdirSync('stuff');
+// fs.rmdirSync('stuff');  sync blocks code
 
-fs.readFile('readme.txt', 'utf8', function(err, data){
-    fs.writeFile('writeme.txt', data);
-    
+// fs.mkdir('stuff', function(){
+//     fs.readFile('readMe.txt', 'utf8', function(err, data){
+//         fs.writeFile('./stuff/writeMe.txt', data);
+        
+//     });
+// });
+fs.unlink('./stuff/writeMe.txt', function(){
+  fs.rmdir('stuff');  
 });
-console.log('test');
