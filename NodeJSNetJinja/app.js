@@ -1,14 +1,18 @@
-var fs = require ('fs');
+var http = require('http');
 
-// fs.mkdirSync('stuff');
-// fs.rmdirSync('stuff');  sync blocks code
-
-// fs.mkdir('stuff', function(){
-//     fs.readFile('readMe.txt', 'utf8', function(err, data){
-//         fs.writeFile('./stuff/writeMe.txt', data);
-        
-//     });
-// });
-fs.unlink('./stuff/writeMe.txt', function(){
-  fs.rmdir('stuff');  
+var server = http.createServer(function(req, res){
+   
+   console.log('request was made: ' + req.url);
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.end('Hey, Ninjas.');
 });
+
+
+server.listen(8080, '0.0.0.0' );
+
+console.log('Now listening to port 8080');
+
+
+// server.listen(8080, '127.0.0.1');
+
+//control c cancels process
