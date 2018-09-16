@@ -1,1 +1,0 @@
-    1  history > history_for_print.txt

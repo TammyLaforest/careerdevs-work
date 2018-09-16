@@ -1,8 +1,0 @@
-AccountSOFT
-*** For accounting managers ONlY ***
-Name		Pay
-______________	________________
-Arnell		$0
-Cliff		$2,000,000
-Reece		$1,000,000
-
