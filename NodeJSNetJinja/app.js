@@ -3,9 +3,14 @@ var fs = require('fs');
 
 var server = http.createServer(function(req, res){
   console.log('request was made: ' + req.url);
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    var myReadStream = fs.createReadStream(__dirname + '/index.html', 'utf8');
-    myReadStream.pipe(res);
+    res.writeHead(200, {'Content-Type': 'application/json'});
+    var myObj ={
+        name: 'Ryu',
+        job: 'Ninja', 
+        age: 29
+        
+    };
+    res.end(JSON.stringify(myObj));
 });
 server.listen(8080, '0.0.0.0');
 console.log('Now listening to port 8080');
@@ -13,7 +18,8 @@ console.log('Now listening to port 8080');
    //pipe can only be used on readable streams
 // var myWriteStream = fs.createWriteStream(__dirname + '/writeMe.txt'); 
 //replaced myWriteStream with res
-
+// var myReadStream = fs.createReadStream(__dirname + '/index.html', 'utf8');
+//     myReadStream.pipe(res);
 
 
 // // server.listen(8080, '127.0.0.1');
