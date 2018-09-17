@@ -8,7 +8,22 @@
             
           }
 
-
+ li {list-style-type: none;}
+  form, input, label, li
+  {
+      display: inline-block;
+      margin:auto;
+      margin-bottom: .5em;
+  }
+  button {
+      display: block;
+      margin-top: 2em;
+      
+  }
+  label{
+      margin-right: .5em;
+  }
+ 
 /*body{*/
 /*    background: #0d1521;*/
 /*    font-family: tahoma;*/

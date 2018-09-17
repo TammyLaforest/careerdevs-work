@@ -2,8 +2,36 @@
 <html>
 
 <head>
-  <link href="/assets/styles.css" rel="stylesheet" type- "text/css" />
+  
 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<style>
+       body{
+              background: skyblue; font-family: veranda; color: #fff; padding: 30px;}
+              h1, h3
+              {font-size: 48px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
+              p, li
+              {font-size: 16px; text-align: center;
+            
+          }
+
+ li {list-style-type: none;}
+  form, input, label, li
+  {
+      display: inline-block;
+      margin:auto;
+      margin-bottom: .5em;
+  }
+  button {
+      display: block;
+      margin-top: 2em;
+      
+  }
+  label{
+      margin-right: .5em;
+  }
+ 
+</style>
 </head>
 
 <body>
@@ -14,8 +42,8 @@
     <label for "who">Who do you want to contact?</label>
     <input type="text" name="who">
       <label for "department">Which department?</label>
-    <input type="text" name="department">
-      <label for "email">Your Email</label>
+    <input type="text" name="department"><br/>
+    <label for "email" class= "form-control">Your Email</label>
     <input type="email" name="email">
     <input type="submit" name="submit">
 </form>

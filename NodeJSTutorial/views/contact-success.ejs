@@ -37,20 +37,11 @@
 <body>
    <% include partials/nav.ejs %>
   
-  <h1> Contact Us!</h1>
-  <p>Contact the Ninjas.</p>
-  
-  
-<p><%= qs.person %></p>
-<form id="contact-form" method="POST" action="/contact">
-    <label for "who">Who do you want to contact?</label>
-    <input type="text" name="who" value = "<%= qs.person %>">
-      <label for "department">Which department?</label>
-    <input type="text" name="department" value = "<%= qs.dept %>"><br/>
-      <label for "email">Your Email</label>
-    <input type="email" name="email"><br/>
-    <button type="submit" name="submit">submit</button>
-</form>
+  <h1> Contact Successful!</h1>
+
+<p>Thanks for getting in touch!</p>
+<p>You contacted <%= data.who %> in the <%= data.dept %> department.</p>
+<p>We will reply to you at <%= data.email %></p>
 
 </body>
 
