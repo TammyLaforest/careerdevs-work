@@ -1,4 +1,5 @@
 var express = require('express');
+var todoController = require('./controllers/todoController');
 var app = express();
 
 //set up template engine 
@@ -8,7 +9,8 @@ app.set('view engine', 'ejs');
 //static files
 app.use(express.static('./public'));
 
-// localhost:8080/assets/styles.css
+//fire controllers
+todoController(app);
 
 //listen to port
 
@@ -17,15 +19,16 @@ console.log('You are listening to port 8080');
 
 
 
+
+
+//old stuff from tutorial for reference
+
+// localhost:8080/assets/styles.css
 // var bodyParser = require('body-parser');
-
 // var urlencodedParser = bodyParser.urlencoded({ extended: false });
-
 // );
-
 // app.get('/', function(req, res){
 //     res.render('index');
-    
 // });
 
 // app.get('/contact', function(req, res){
