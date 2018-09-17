@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <link href="/assets/styles.css" rel="stylesheet" type- "text/css" />
 
-  </head>  
-  <body>
-    <% include partials/nav.ejs %>
-      <h1> Contact Us!</h1>
-      <p>Contact the Ninjas.</p>
-      
-      
-      
-  </body>
+<head>
+  
+  <link href="/assets/styles.css" rel="stylesheet" type- "text/css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body>
+   <% include partials/nav.ejs %>
+  
+  <h1> Contact Us!</h1>
+  <p>Contact the Ninjas.</p>
+  
+  
+<p><%= qs.person %></p>
+<form id="contact-form">
+    <label for "who">Who do you want to contact?</label>
+    <input type="text" name="who" value = "<%= qs.person %>">
+      <label for "department">Which department?</label>
+    <input type="text" name="department" value = "<%= qs.dept %>">
+      <label for "email">Your Email</label>
+    <input type="email" name="email">
+    <button type="submit" name="submit">submit</button>
+</form>
+
+</body>
+
 </html>
