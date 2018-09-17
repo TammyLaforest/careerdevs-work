@@ -14,7 +14,7 @@
     "jade": "~1.11.0",
     "morgan": "~1.9.0"
   },
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis et eros eget lobortis. In hac habitasse platea dictumst. Suspendisse accumsan a metus vel malesuada. Proin interdum, magna ac commodo sollicitudin, orci arcu tempor nisl, ac egestas nunc est at lacus. Fusce varius augue mi, vitae auctor ipsum viverra mollis. Morbi vel ipsum nisl. Curabitur eleifend erat non nulla posuere, eu suscipit lorem molestie. Duis et dolor non felis blandit tempor. Aenean felis neque, lobortis vestibulum lectus in, malesuada pharetra nunc. Donec at libero nec tellus commodo imperdiet. Nullam ac quam ullamcorper, iaculis arcu sed, semper eros. Donec molestie odio id lectus tristique ornare. Aliquam vitae elit non lacus sagittis malesuada vel aliquet tortor.",
+  "description": "Net Ninja NodeJS tutorial walk through",
   "main": "app.js",
   "keywords": [
     "fun",
