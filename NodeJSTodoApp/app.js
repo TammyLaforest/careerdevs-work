@@ -17,7 +17,3 @@ todoController(app);
 app.listen(8080);
 console.log('You are listening to port 8080');
 
-
-// const mongoose = require('mongoose');
- 
-// mongoose.connect('mongodb://localhost/my_database');
