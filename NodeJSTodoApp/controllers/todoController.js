@@ -37,11 +37,8 @@ module.exports = function(app){
               res.json(data);
           
         });
-        
-        // data.push(req.body);
-        // res.json({todos:data});
-        
  
+      });
     
       app.delete('/todo/:item', function(req, res){
         //delte the requested item from mongodb
@@ -51,9 +48,4 @@ module.exports = function(app){
           
         });
       });
-        
-        data = data.filter(function(todo){
-          return todo.item.replace(/ /g, '-') !== req.params.item;
-        });
-    res.json(data);
-    });
+};
