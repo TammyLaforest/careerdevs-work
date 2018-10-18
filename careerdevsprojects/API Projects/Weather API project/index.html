@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    
+</head>
+
+<body onload="getLocation();">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg">
+            <h1 id="title">Local Weather App</h1>
+            <br>
+            <p class="" id="loading">The app may take a moment to load </br> while retrieving your GPS location.</p>
+        </div>
+    </div>
+    <div class="row" id="appBox">
+        <div class="col-lg">
+            <p class="" id="latLon"></p>
+             <p class="" id="loadingmessage">loading...<span font-style="normal"><br>If your city doesn't load within 20 seconds, reload your browser.</span></p>
+            <h3 id="location"></h3>
+            <div id="icon"></div>
+            <h3 id="weather"></h3>
+            <h3 class="" id="temp"></h3>
+            <h3 class="" id="tempF"></h3>
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg">
+            
+            <div class="btn-group btn-group-toggle" data-toggle="buttons" >
+                <label class="btn btn-outline-secondary active">
+    <input type="radio" name="options" id="celsius"  autocomplete="off" onchange="showHideC()"checked>celsius
+  </label>
+ <label class="btn btn-outline-secondary">
+    <input type="radio" name="options" id="fahrenheit" onchange="showHideF()" autocomplete="off">fahrenheit
+  </label>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

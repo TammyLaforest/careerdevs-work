@@ -1,0 +1,66 @@
+  h1 { 
+    text-align: center;
+    
+  }
+
+.appbox {
+  margin-top: .5em;
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+   margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
+  
+}
+
+@media only screen and (min-width: 768px) {
+
+
+  .appbox {
+  max-width: 70vw;
+
+  }
+  
+}
+
+
+.hide {
+  display:none;
+}
+
+.online{
+  display: block;
+}
+
+.offline {
+  display: block;
+}
+
+
+
+#buttonGroup {
+  text-align: center;
+  margin: .5em;
+  
+  
+}
+
+
+table {
+  text-align: center;
+}
+th {
+  background-color: gainsboro;
+  text-align: center;
+  border-right: 1px solid #404040;
+  border-bottom: 1px solid #404040;
+
+ 
+}
+
+th:last-of-type{
+  border-right: 1px solid gainsboro;
+  border-bottom: 1px solid #404040;
+
+ 
+}

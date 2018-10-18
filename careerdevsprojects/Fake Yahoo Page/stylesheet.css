@@ -1,0 +1,463 @@
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Philosopher', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
+
+.header-img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: slategray;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Navbar-brand {
+    font-size: large;
+}
+
+.navbar-expand-lg {
+    line-height: 3em;
+}
+
+.navbar {
+    background-color: #f8f9fa;
+}
+
+h1 {
+    padding-top: 1em;
+    padding-bottom: .25em;
+    color: #430297;
+    font-weight: bold;
+}
+
+h4 {
+    color: #430297;
+    font-weight: bold;
+}
+
+h3 {
+    color: #430297;
+    font-weight: bold;
+}
+
+/*This is the css code for my table */
+
+.column-headers-background {
+    z-index: 1;
+    width: 115px;
+    text-align: right;
+    font-weight: bolder;
+}
+
+.row-headers-background {
+    z-index: 1;
+    width: 50px;
+
+}
+
+.waffle {
+    text-align: right;
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.waffle .negative {
+    color: red;
+    font-weight: bold;
+}
+
+.waffle .positive {
+    color: #2ed573;
+    font-weight: bold;
+}
+
+.waffle a {
+    color: blue;
+
+}
+
+.waffle a:hover {
+    color: darkblue;
+}
+
+/* The code for my footer */
+
+#social-buttons {
+    padding-top: 1em;
+
+}
+
+#footer-custom {
+    background-color: #f8f9fa;
+    padding-top: 2em;
+
+}
+
+#form-container {
+    /*padding-top: 2em;*/
+    padding-bottom: 2em;
+
+}
+
+.form-button-collapse {
+    padding: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-family: sans-serif;
+    background-color: black;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    color: white;
+    font-weight: bold;
+    display: block;
+    width: 65%;
+}
+
+.form-button-collapse:hover {
+    padding: 1em;
+    font-family: sans-serif;
+    background-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #430297;
+    color: #430297;
+    font-weight: bold;
+
+}
+
+
+
+.sign-up-header {
+    text-align: left;
+}
+
+
+.sign-up-container {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: 0;
+}
+
+@media (max-width: 765px) {
+    .sign-up-header {
+        width: 100%;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .form-button-collapse {
+
+        padding: 1em;
+        margin-bottom: 1em;
+        margin-top: 1em;
+        font-family: sans-serif;
+        background-color: black;
+        border-style: solid;
+        border-width: thin;
+        border-color: black;
+        color: white;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+#services {
+    padding-top: 1.5em;
+    padding-bottom: 3em;
+    background-color: #f8f9fa;
+}
+
+#yahoologo {
+    animation-duration: 4s;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+    position: absolute;
+    width: auto;
+    height: auto;
+}
+
+.hiddenlogo {
+    margin-right: 40px;
+}
+
+
+#photo-login .photo-login {
+    width: 100%;
+    height: auto;
+}
+
+
+
+#submit-button {
+    margin-bottom: 1em;
+    background-color: #430297;
+    padding-right: 2em;
+    padding-left: 2em;
+    border: none;
+}
+
+.center {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+
+
+.news-img {
+    max-height: 200px;
+    width: auto;
+    margin: 1em;
+}
+
+.fader {
+    /* Giving equal sizes to each element */
+    width: 200px;
+    height: auto;
+    margin: auto;
+
+    /* Positioning elements in lines */
+    display: inline-block;
+
+    /* This is necessary for position:absolute to work as desired */
+    position: relative;
+
+    /* Preventing zoomed images to grow outside their elements */
+    overflow: hidden;
+}
+
+
+.fader img {
+    /* Stretching the images to fill whole elements */
+    width: 100%;
+    height: 100%;
+
+    /* Preventing blank space below the image */
+    line-height: 0;
+    /* A one-second transition was to disturbing for me */
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.fader img:hover {
+    /* Making images appear bigger and transparent on mouseover */
+    opacity: 0.5;
+    width: 120%;
+    height: 120%;
+}
+
+.fader .text {
+    /* Placing text behind images */
+    z-index: -10;
+
+    /* Positioning text top-left conrner in the middle of elements */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.fader .text p {
+    /* Positioning text contents 50% left and top relative
+               to text container's top left corner */
+    margin-top: -50%;
+    margin-left: -50%;
+}
+
+.thumbnail {
+    height: auto;
+    max-width: 100px;
+    margin: auto;
+}
+
+
+.card-deck {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.card-deck .card {
+    margin-bottom: 15px;
+}
+
+@media (min-width: 765px) {
+    .card-deck {
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .card-deck .card {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex: 1 0 0%;
+        flex: 1 0 0%;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-right: 15px;
+        margin-bottom: 0;
+        margin-left: 15px;
+    }
+}
+
+.news-container {
+    min-width: 992px width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 765px) {
+    .news-container {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.navbar-brand {
+    /*font-family: 'Playfair Display', serif;*/
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+.navbar-brand span {
+    color: #430297;
+    font-weight: bold;
+
+}
+
+
+
+
+.collapse-right {
+    height: auto;
+    width: auto;
+}
+
+.collapse-right.height {
+    float: right;
+    position: relative;
+    height: 0;
+    -webkit-transition: height 0.35s ease;
+    -moz-transition: height 0.35s ease;
+    -o-transition: height 0.35s ease;
+    transition: height 0.35s ease;
+
+}
+
+.collapse-right.width {
+    float: right;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    -webkit-transition: width 0.35s ease;
+    -moz-transition: width 0.35s ease;
+    -o-transition: width 0.35s ease;
+    transition: width 0.35s ease;
+
+}
+
+.collapse-right.in.width {
+    width: auto;
+
+}
+
+.collapse-right.in.height {
+    height: auto;
+
+}
+
+
+#wide-version-of-table {
+    display: block;
+}
+
+#narrow-version-of-table {
+    display: none;
+}
+
+@media (max-width:765px)
+/* The maximum width for the mobile device version. */
+
+    {
+    #wide-version-of-table {
+        display: none;
+    }
+    #narrow-version-of-table {
+        display: block;
+    }
+}
+
+.container-services-wide {
+    width: 55%;
+    vertical-align: central;
+    margin: auto;
+    padding-bottom: 2em;
+}
+
+.zoom:hover {
+    color: #430297;
+    transform: scale(1.2);
+}
+
+.shrink:hover {
+    transform: scale(.95);
+}
+
+.purple:hover{
+    color: #430297;
+}
+
+.container-services-wide i:hover {
+    transform: none;
+    color: black;
+}
+
+ul li {
+    color: #430297;
+    font-size: larger;
+}
+
+ul li span {
+    color: black;
+}
+
+footer ul li {
+    color: black;
+}
+
+.strong {
+    font-weight: bold;
+}
